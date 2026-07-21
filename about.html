@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات عنا - ابحث عن دوائك</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-pills"></i> <span data-i18n="site_name">ابحث عن دوائك</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">الرئيسية</a></li>
+                    <li><a href="about.html" class="active" data-i18n="about">معلومات عنا</a></li>
+                    <li><a href="auth.html" data-i18n="login">تسجيل الدخول</a></li>
+                </ul>
+                <div class="controls">
+                    <button id="theme-toggle" class="icon-btn" title="تبديل المظهر">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="lang-toggle" class="icon-btn" title="تبديل اللغة">
+                        <span class="lang-text">EN</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn icon-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-page">
+        <div class="container">
+            <div class="about-content">
+                <h1 data-i18n="about_heading">عن منصة ابحث عن دوائك</h1>
+                <div class="mission">
+                    <i class="fas fa-bullseye"></i>
+                    <p data-i18n="about_mission">نهدف إلى تسهيل وصول المرضى إلى الأدوية المطلوبة من خلال ربطهم مباشرة بأقرب الصيدليات المتوفرة، مما يضمن تجربة آمنة وسريعة وشفافة.</p>
+                </div>
+                <div class="how-it-works">
+                    <h2 data-i18n="how_works">كيف تعمل المنصة؟</h2>
+                    <div class="steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <h3 data-i18n="step1_title">ابحث عن دوائك</h3>
+                            <p data-i18n="step1_desc">استخدم شريط البحث للعثور على الدواء الذي تحتاجه.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <h3 data-i18n="step2_title">اختر الصيدلية</h3>
+                            <p data-i18n="step2_desc">قارن الأسعار والتقييمات واختر الأنسب لك.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <h3 data-i18n="step3_title">استلم طلبك</h3>
+                            <p data-i18n="step3_desc">تواصل مع الصيدلية مباشرة أو اطلب التوصيل.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer_text">© 2024 ابحث عن دوائك. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
