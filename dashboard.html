@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <nav class="top-nav">
+      <a class="brand" href="index.html">Medicine Finder</a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="about.html" data-i18n="about">About</a>
+        <a href="dashboard.html" data-i18n="dashboard">Dashboard</a>
+        <a href="logout.html" id="authLink" data-i18n="logout">Logout</a>
+        <button class="theme-toggle" id="themeToggle" type="button">🌙</button>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="card">
+      <h2 data-i18n="dashboardTitle">Admin Dashboard</h2>
+      <p data-i18n="welcome">Welcome, <span id="welcomeUser">Admin</span>.</p>
+      <div class="results-list">
+        <article class="result-item">
+          <h3 data-i18n="medicine">Medicines</h3>
+          <p data-i18n="totalMeds">Total medications in the system: <strong id="totalMedsCount">0</strong></p>
+        </article>
+        <article class="result-item">
+          <h3 data-i18n="filesSection">Files</h3>
+          <p data-i18n="filesDesc">Upload and manage medicine-related files and documents.</p>
+          <a href="files.html" data-i18n="goToFiles">Go to Files</a>
+        </article>
+        <article class="result-item">
+          <h3 data-i18n="manageMeds">Manage Medicines</h3>
+          <p data-i18n="manageMedsDesc">Add medication details and the admin location/contact information.</p>
+          <a href="medicines.html" data-i18n="manageMeds">Manage Medicines</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
