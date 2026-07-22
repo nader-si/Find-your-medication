@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Files</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <nav class="top-nav">
+      <a class="brand" href="index.html">Medicine Finder</a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="about.html" data-i18n="about">About</a>
+        <a href="dashboard.html" data-i18n="dashboard">Dashboard</a>
+        <a href="logout.html" id="authLink" data-i18n="logout">Logout</a>
+        <button class="theme-toggle" id="themeToggle" type="button">🌙</button>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="card">
+      <h2 id="fileFormTitle" data-i18n="uploadFile">Upload File</h2>
+      <p data-i18n="filesDesc">Upload a file with details and link it to a medicine.</p>
+      <p id="fileSuccessMsg" style="color:#15803d;"></p>
+      <p id="fileErrorMsg" style="color:#b91c1c;"></p>
+      <form id="fileForm" class="auth-form" style="margin-top:1rem;" enctype="multipart/form-data">
+        <label for="medicine_id" data-i18n="linkedMed">Linked Medicine</label>
+        <select id="medicine_id" name="medicine_id">
+          <option value="0" data-i18n="general">General</option>
+        </select>
+        <label for="fileTitle" data-i18n="fileTitle">Title</label>
+        <input id="fileTitle" name="title" type="text" required />
+        <label for="fileInput" data-i18n="file">File</label>
+        <input id="fileInput" name="file" type="file" />
+        <label for="fileDesc" data-i18n="description">Description</label>
+        <textarea id="fileDesc" name="description" rows="4"></textarea>
+        <label for="fileLocation" data-i18n="location">Location</label>
+        <input id="fileLocation" name="location" type="text" />
+        <label for="fileAdminName" data-i18n="adminName">Admin Name</label>
+        <input id="fileAdminName" name="admin_name" type="text" />
+        <label for="fileAdminPhone" data-i18n="adminPhone">Admin Phone</label>
+        <input id="fileAdminPhone" name="admin_phone" type="text" />
+        <button id="fileSubmitBtn" type="submit" data-i18n="uploadFile">Upload File</button>
+      </form>
+    </section>
+    <section class="card" style="margin-top:1.5rem;">
+      <h3 data-i18n="uploadedFiles">Uploaded Files</h3>
+      <div class="results-list" id="fileList">
+        <p class="status" data-i18n="noFiles">No files uploaded yet.</p>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
